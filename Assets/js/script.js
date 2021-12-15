@@ -1,17 +1,18 @@
+// This creates and shows the current date.
 var todayDate = moment().format("dddd, MMM Do");
 $("#currentDay").html(todayDate);
 
 $(document).ready(function () {
-  // saveBtn click listener
+  // Save button click function.
   $(".saveBtn").on("click", function () {
     // Get nearby values of the description in JQuery
     var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
-    // Save text in local storage
+    // This sets local storage text.
     localStorage.setItem(time, text);
   });
-
+  // Time track function and classes.
   function timeTracker() {
     var timeNow = moment().hour();
 
@@ -33,16 +34,16 @@ $(document).ready(function () {
       }
     });
   }
-
-  $("#9am .description").val(localStorage.getItem("9am"));
-  $("#10am .description").val(localStorage.getItem("10am"));
-  $("#11am .description").val(localStorage.getItem("11am"));
-  $("#12pm .description").val(localStorage.getItem("12pm"));
-  $("#1pm .description").val(localStorage.getItem("1pm"));
-  $("#2pm .description").val(localStorage.getItem("2pm"));
-  $("#3pm .description").val(localStorage.getItem("3pm"));
-  $("#4pm .description").val(localStorage.getItem("4pm"));
-  $("#5pm .description").val(localStorage.getItem("5pm"));
+  // Getting local storage for my time slots.
+  $("#hour9 .description").val(localStorage.getItem("hour9"));
+  $("#hour10 .description").val(localStorage.getItem("hour10"));
+  $("#hour11 .description").val(localStorage.getItem("hour11"));
+  $("#hour12 .description").val(localStorage.getItem("hour12"));
+  $("#hour13 .description").val(localStorage.getItem("hour13"));
+  $("#hour14 .description").val(localStorage.getItem("hour14"));
+  $("#hour15 .description").val(localStorage.getItem("hour15"));
+  $("#hour16 .description").val(localStorage.getItem("hour16"));
+  $("#hour17 .description").val(localStorage.getItem("hour17"));
 
   timeTracker();
 });
