@@ -3,6 +3,15 @@ body {
   font-size: 16px;
   line-height: 1;
 }
+.display-3 {
+  color: blueviolet;
+}
+.lead {
+  color: peru;
+}
+#currentDay {
+  color: rgb(20, 145, 145);
+}
 
 textarea {
   background: transparent;
@@ -15,7 +24,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: #ffffff;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -38,7 +47,7 @@ textarea {
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
+  color: rgb(20, 145, 145);
   border-top: 1px dashed #000000;
 }
 
@@ -61,7 +70,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: rgb(20, 145, 145);
   color: white;
 }
 
